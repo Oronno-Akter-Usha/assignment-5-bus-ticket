@@ -13,8 +13,55 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body>
+<body class="mx-7 mt-4 md:mx-14 md:mt-7 lg:mx-28 lg:mt-14 font-raleway">
+    <header>
+        <!-- nav section -->
+        <nav>
+            <div class="navbar bg-base-100 mb-12">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52  font-medium text-lg font-raleway">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Destination</a></li>
+                        <li><a href="">Search</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost font-raleway font-extrabold text-4xl">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 font-medium text-lg font-raleway">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Destination</a></li>
+                    <li><a href="">Search</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                   <button class="btn bg-[#1dd1001a] text-[#1DD100] border-[#1dd10066] text-xl">
+                     Bus
+                     <img src="images/bus-icon.png" alt="">
+                   </button>
+                </div>
+              </div>
+        </nav>
 
+        <!-- banner section --> 
+          <div class="hero min-h-[550px] bg-[url(images/banner.png)] bg-center bg-no-repeat rounded-[32px] mb-40 ">
+            <div class="hero-content text-center">
+              <div class="max-w-[742px]">
+                <h1 class="text-5xl font-extrabold text-white leading-[60px]">End-to-End Travel with <br> 
+                <span class="text-[#1DD100]">P Paribahan</span>
+                </h1>
+                <p class="py-6 text-white leading-[30px]">Book bus tickets effortlessly on our user-friendly platform. Enjoy seamless travel planning with a wide network of routes and secure transactions</p>
+                <button class="btn bg-[#1DD100] text-xl font-bold px-7 text-black border-none">Buy Tickets</button>
+              </div>
+            </div>
+          </div>
+    </header>
 </body>
 
 </html>
