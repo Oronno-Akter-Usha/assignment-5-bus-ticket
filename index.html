@@ -2,66 +2,110 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bus Ticket</title>
-    <!-- daisyUI and Tailwind link -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Ticket</title>
+  <!-- daisyUI and Tailwind link -->
 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- custom css -->
-    <link rel="stylesheet" href="styles/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- custom css -->
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body class="mx-7 mt-4 md:mx-14 md:mt-7 lg:mx-28 lg:mt-14 font-raleway">
-    <header>
-        <!-- nav section -->
-        <nav>
-            <div class="navbar bg-base-100 mb-12">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52  font-medium text-lg font-raleway">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Destination</a></li>
-                        <li><a href="">Search</a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost font-raleway font-extrabold text-4xl">P-Ticket</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1 font-medium text-lg font-raleway">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Destination</a></li>
-                    <li><a href="">Search</a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end">
-                   <button class="btn bg-[#1dd1001a] text-[#1DD100] border-[#1dd10066] text-xl">
-                     Bus
-                     <img src="images/bus-icon.png" alt="">
-                   </button>
-                </div>
-              </div>
-        </nav>
-
-        <!-- banner section --> 
-          <div class="hero md:h-[600px] bg-[url(images/banner.png)] bg-center bg-no-repeat bg-cover rounded-[32px] mb-40 ">
-            <div class="hero-content text-center">
-              <div class="max-w-[742px]">
-                <h1 class="text-5xl font-extrabold text-white leading-[60px]">End-to-End Travel with <br> 
-                <span class="text-[#1DD100]">P Paribahan</span>
-                </h1>
-                <p class="py-6 text-white leading-[30px] font-inter">Book bus tickets effortlessly on our user-friendly platform. Enjoy seamless travel planning with a wide network of routes and secure transactions</p>
-                <button class="btn bg-[#1DD100] text-xl font-bold px-7 text-black border-none">Buy Tickets</button>
-              </div>
+  <header>
+    <!-- nav section -->
+    <nav>
+      <div class="navbar bg-base-100 mb-12">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
             </div>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52  font-medium text-lg">
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Destination</a></li>
+              <li><a href="">Search</a></li>
+            </ul>
           </div>
-    </header>
+          <a class="btn btn-ghost font-extrabold text-4xl">P-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 font-medium text-lg font-raleway">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Destination</a></li>
+            <li><a href="">Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button class="btn bg-[#1dd1001a] text-[#1DD100] border-[#1dd10066] text-xl">
+            Bus
+            <img src="images/bus-icon.png" alt="">
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- banner section -->
+    <div class="hero md:h-[600px] bg-[url(images/banner.png)] bg-center bg-no-repeat bg-cover rounded-[32px] mb-40 ">
+      <div class="hero-content text-center">
+        <div class="max-w-[742px]">
+          <h1 class="text-5xl font-extrabold text-white leading-[60px]">End-to-End Travel with <br>
+            <span class="text-[#1DD100]">P Paribahan</span>
+          </h1>
+          <p class="py-6 text-white leading-[30px] font-inter">Book bus tickets effortlessly on our user-friendly
+            platform. Enjoy seamless travel planning with a wide network of routes and secure transactions</p>
+          <button class="btn bg-[#1DD100] text-xl font-bold px-7 text-black border-none">Buy Tickets</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- main -->
+  <main>
+    <!-- offers section -->
+    <div class="md:mb-32">
+      <h3 class="text-center text-[40px] font-bold mb-12">Best offers for you</h3>
+      <!-- offers container -->
+      <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+        <!-- 15% off -->
+        <div class="bg-[#FFBF0F] h-[220px] md:w-[573px] rounded-3xl flex justify-center items-center">
+          <div class="mr-14 font-inter ">
+            <h3 class="font-black md:text-[40px] mb-2">15% OFF</h3>
+            <p class="text-xl font-semibold mb-2">on your next purchase</p>
+            <p class="text-[#03071280]">use by January 2024</p>
+          </div>
+          <img src="images/cupon-devider.png" alt="">
+          <div class="ml-10 text-center">
+            <h4 class="md:text-[32px] font-bold">NEW15</h4>
+            <p class="text-xl font-medium text-[#03071266]">Coupon Code</p>
+          </div>
+        </div>
+         <!-- 20% off -->
+         <div class="bg-[#F78C9C] h-[220px] md:w-[573px] rounded-3xl flex justify-center items-center">
+          <div class="mr-14 font-inter ">
+            <h3 class="font-black text-[40px] mb-2">20% OFF</h3>
+            <p class="text-xl font-semibold mb-2">on your next purchase</p>
+            <p class="text-[#03071280]">use by January 2024</p>
+          </div>
+          <img src="images/cupon-devider.png" alt="">
+          <div class="ml-10 text-center">
+            <h4 class="text-[32px] font-bold">Couple 20</h4>
+            <p class="text-xl font-medium text-[#03071266]">Coupon Code</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center items-center mt-[62px]">
+        <button class="btn bg-white border-[#1DD100] text-[#1DD100] text-xl font-bold">See All Offers</button>
+      </div>
+    </div>
+  </main>
 </body>
 
 </html>
