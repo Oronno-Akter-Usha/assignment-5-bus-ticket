@@ -13,8 +13,8 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body class="mx-7 mt-4 md:mx-14 md:mt-7 lg:mx-28 lg:mt-14 font-raleway">
-  <header>
+<body class=" lg:mt-14 font-raleway">
+  <header class="mx-7 mt-4 md:mx-14 md:mt-7 lg:mx-28">
     <!-- nav section -->
     <nav>
       <div class="navbar bg-base-100 mb-12">
@@ -62,7 +62,8 @@
           </h1>
           <p class="py-6 text-white leading-[30px] font-inter">Book bus tickets effortlessly on our user-friendly
             platform. Enjoy seamless travel planning with a wide network of routes and secure transactions</p>
-          <button class="btn bg-[#1DD100] text-xl font-bold px-7 text-black border-none">Buy Tickets</button>
+          <button class="btn bg-[#1DD100] text-xl font-bold px-7 text-black border-none"><a href="#booking-section">Buy
+              Tickets</a></button>
         </div>
       </div>
     </div>
@@ -70,7 +71,7 @@
   <!-- main -->
   <main>
     <!-- offers section -->
-    <div class="md:mb-32">
+    <div class="md:mb-32 mx-7 mt-4 md:mx-14 md:mt-7 lg:mx-28">
       <h3 class="text-center text-[40px] font-bold mb-12">Best offers for you</h3>
       <!-- offers container -->
       <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
@@ -87,8 +88,8 @@
             <p class="text-xl font-medium text-[#03071266]">Coupon Code</p>
           </div>
         </div>
-         <!-- 20% off -->
-         <div class="bg-[#F78C9C] h-[220px] md:w-[573px] rounded-3xl flex justify-center items-center">
+        <!-- 20% off -->
+        <div class="bg-[#F78C9C] h-[220px] md:w-[573px] rounded-3xl flex justify-center items-center">
           <div class="mr-14 font-inter ">
             <h3 class="font-black text-[40px] mb-2">20% OFF</h3>
             <p class="text-xl font-semibold mb-2">on your next purchase</p>
@@ -105,6 +106,71 @@
         <button class="btn bg-white border-[#1DD100] text-[#1DD100] text-xl font-bold">See All Offers</button>
       </div>
     </div>
+
+    <!-- booking section -->
+    <div id="booking-section" class="bg-[#F7F8F8] border-[#1DD100] border-t-[2px] rounded-[88px] w-full">
+      <!-- text -->
+      <div class="flex flex-col justify-center items-center">
+        <div class="text-center mb-10 mt-28">
+          <h3 class="text-[40px] font-bold mb-6">P Paribahan</h3>
+          <p class="text-lg">Discover convenience and reliability in bus ticket booking. Find the perfect journey with
+            ease and peace of mind.</p>
+        </div>
+        <div class="bg-white md:w-[1170px] py-8 mb-6 rounded-3xl flex justify-between items-center">
+          <div class="px-8">
+            <div class="md:w-[808px] mb-6">
+              <div class="flex items-center">
+                <img class="w-[68px] h-12" src="images/bus-logo.png" alt="">
+                <div class="ml-4">
+                  <h3 class="text-[32px] font-bold">Greenline Paribahan</h3>
+                  <p class="font-inter text-[#03071299] text-lg">Coach-009-WEB ! AC_Business</p>
+                </div>
+                <div class="bg-[#1dd10026] flex justify-center items-center p-4 gap-1 ml-[234px] rounded-xl">
+                  <img src="images/seat-green.png" alt="">
+                  <p class="text-[#1DD100] font-medium text-lg "><span>40</span> Seats left</p>
+                </div>
+              </div>
+            </div>
+            <!-- box -->
+            <div class=" bg-[#F7F8F8]  rounded-3xl p-8">
+              <div class="flex justify-between ite-center mb-6">
+                <p class="text-lg font-semibold text-[#03071299]">Route</p>
+                <p class="text-lg font-semibold">Dhaka - Sylhet</p>
+              </div>
+              <hr>
+              <div class="flex justify-between ite-center mb-6 mt-6">
+                <p class="text-lg font-semibold text-[#03071299]">Departure Time</p>
+                <p class="text-lg font-semibold">9:00 PM</p>
+              </div>
+              <hr>
+              <div class="flex gap-6 mt-6 font-inter">
+                <div class="bg-[#0307120d] p-5  rounded-xl">
+                  <p class="font-medium">Boarding Point - Laxmipur</p>
+                </div>
+                <div class="bg-[#0307120d] p-5  rounded-xl">
+                  <p class="font-medium">Boarding Point - Laxmipur</p>
+                </div>
+                <div class="bg-[#0307120d] p-5  rounded-xl">
+                  <p class="font-medium">Boarding Point - Laxmipur</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mr-16 flex flex-col justify-center items-center">
+            <img src="images/fare.png" alt="">
+            <h4 class="text-[32px] font-bold">550 Taka</h4>
+            <p class="text-2xl font-semibold">Per Seat</p>
+          </div>
+
+          <div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </main>
 </body>
 

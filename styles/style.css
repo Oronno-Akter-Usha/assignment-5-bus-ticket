@@ -12,3 +12,7 @@
 .font-raleway{
     font-family: "Raleway", sans-serif;
 }
+
+hr {
+    border: 1.5px dashed rgba(3, 7, 18, 0.20);
+}
