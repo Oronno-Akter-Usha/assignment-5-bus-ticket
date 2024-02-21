@@ -6,6 +6,12 @@ for(const seat of allSeat){
          const selectedBtn = seat;
          selectedBtn.style.backgroundColor = "#1DD100";
          selectedBtn.style.color = '#FFFFFF';
+
+         const selectedSeat = getConvertedValue('selected-seat');
+         document.getElementById('selected-seat').innerText = selectedSeat + 1;
+
+         const seatLeft = getConvertedValue('seat-left');
+         document.getElementById('seat-left').innerText = seatLeft - 1;
          
          const seatInnerText = seat.innerText;
          const seatContainer = document.getElementById('show-seat');
