@@ -32,9 +32,27 @@ for(const seat of allSeat){
         })
 }
 
-function updateGrandTotal(){
+function updateGrandTotal(status){
     const totalCost = getConvertedValue('total-cost');
-    document.getElementById('grand-total').innerText = totalCost;
+
+    if(status === undefined){
+        document.getElementById('grand-total').innerText = totalCost;
+    }
+    else{
+        const couponCode = document.getElementById('coupon-code').value;
+
+        if(couponCode == 'NEW15'){
+            const discount = totalCost * .15;
+            document.getElementById('grand-total').innerText = totalCost - discount;
+        }
+        else if(couponCode == 'Couple 20'){
+            const discount = totalCost * .2;
+            document.getElementById('grand-total').innerText = totalCost - discount;
+        }
+        else{
+            alert('Please enter valid coupon code');
+        }
+    }
 }
 
 function updateTotalCost(price){
