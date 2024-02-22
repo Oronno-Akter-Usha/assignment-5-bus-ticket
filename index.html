@@ -116,10 +116,10 @@
           <p class="text-lg">Discover convenience and reliability in bus ticket booking. Find the perfect journey with
             ease and peace of mind.</p>
         </div>
-        <div class="bg-white md:w-[1170px] py-8 mb-6 rounded-3xl flex justify-between items-center">
+        <div class="bg-white md:w-[1170px] py-8 mb-6 rounded-3xl flex flex-col md:flex-row justify-between items-center">
           <div class="px-8">
             <div class="md:w-[808px] mb-6">
-              <div class="flex items-center">
+              <div class="flex flex-col md:flex-col lg:flex-row items-center">
                 <img class="w-[68px] h-12" src="images/bus-logo.png" alt="">
                 <div class="ml-4">
                   <h3 class="text-[32px] font-bold">Greenline Paribahan</h3>
@@ -171,7 +171,7 @@
 
 
         <!-- Select Your Seat section -->
-        <div class=" md:w-[1170px] mb-14 rounded-3xl flex bg-white p-8 font-inter">
+        <div class=" md:w-[1170px] mb-14 rounded-3xl flex flex-col md:flex-col lg:flex-row justify-center items-center bg-white md:p-4 lg:p-8 font-inter">
           <!-- select seat -->
           <div>
             <div class="md:w-[609px]">
@@ -191,12 +191,12 @@
               <!-- seats -->
               <div class="">
                 <div
-                  class="w-[110px] h-[56px] bg-[#0307121a] flex items-center justify-center rounded-xl ml-[500px] mt-6">
+                  class="w-[110px] h-[56px] bg-[#0307121a] flex items-center justify-center rounded-xl lg:ml-[500px] mt-6">
                   <img src="images/tabler-icon-steering-wheel.svg" alt="">
                 </div>
 
                 <div
-                  class="mt-6 grid grid-cols-5 gap-x-7 gap-y-6 place-content-center items-center font-inter font-medium text-lg text-[#03071280]">
+                  class="mt-6 grid  lg:grid-cols-5 gap-x-7 gap-y-6 place-content-center items-center font-inter font-medium text-lg text-[#03071280]">
 
                   <p>A</p>
                   <button class="w-[110px] h-[56px] bg-[#F7F8F8] rounded-xl seat">A1</button>
@@ -267,7 +267,7 @@
 
           <!-- select seat  information -->
           <hr>
-          <div class="pr-8 ml-16">
+          <div class="lg:pr-8 lg:ml-16">
             <div class="md:w-[409px] flex flex-col justify-center items-center">
               <h4 class="text-2xl font-semibold mb-6 font-raleway">Select Your Seat</h4>
               <hr>
@@ -305,13 +305,13 @@
                   <div class="space-y-4">
                     <label for="" class="font-semibold">Passenger Name*</label><br>
                     <input type="text" placeholder="Enter your name"
-                      class="p-6 pr-48 border-gray-100 border-2 rounded-xl focus:outline-none">
+                      class="md:p-6 md:pr-48 border-gray-100 border-2 rounded-xl focus:outline-none">
                   </div>
 
                   <div class="space-y-4">
                     <label for="" class="font-semibold mb-4">Phone Number*</label><br>
                     <input type="number" placeholder="Enter your phone number"
-                      class="p-6 pr-48 border-gray-100 border-2 rounded-xl appearance-none focus:outline-none">
+                      class="md:p-6 md:pr-48 border-gray-100 border-2 rounded-xl appearance-none focus:outline-none">
                   </div>
 
                   <div class="space-y-4">
@@ -350,12 +350,39 @@
         </div>
       </div>
 
+    </div>
+  </main>
 
+  <footer class="bg-[#030712] lg:px-[120px] lg:py-[135px]">
 
+    <!-- footer content container -->
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div>
+        <h3 class="text-[36px] font-extrabold text-white mb-4">P-Ticket</h3>
+      <p class="text-[#ffffffcc]">Explore, book, and travel with ease - your journey starts here.</p>
+      </div>
+      <div class="text-white">
+        <p>Download our app</p>
+        <div class="flex border-2 border-white p-3 rounded-lg mt-5">
+          <img src="images/playstore.png" alt="">
+          <div>
+            <p class="text-sm">GET IT ON</p>
+            <h4 class="text-xl font-semibold">Google Play</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="bg-white mt-12">
+    <div class="flex flex-col md:flex-row justify-between items-center mt-8 font-inter">
+      <p class="text-[#ffffffb3]">@all rights reserved, P-Ticket services limited.2024</p>
+      <div class="font-medium text-white space-x-8">
+        <a href="">Terms & condition</a>
+        <a href="">Return & refund policy</a>
+        <a href="">Privacy policy</a>
+      </div>
     </div>
 
-
-  </main>
+  </footer>
   <script src="script/script.js"></script>
 </body>
 
